@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Server</servlet-name>
+    <servlet-class>Server.Server</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Server.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>zuce</servlet-name>
+    <servlet-class>Server.zuce</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>infomodify</servlet-name>
+    <servlet-class>Server.infomodify</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>infomodify1</servlet-name>
+    <servlet-class>Server.infomodify1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addcheckid</servlet-name>
+    <servlet-class>Server.addcheckid</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Server</servlet-name>
+    <url-pattern>/Server</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>zuce</servlet-name>
+    <url-pattern>/zuce</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>infomodify</servlet-name>
+    <url-pattern>/infomodify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>infomodify1</servlet-name>
+    <url-pattern>/infomodify1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addcheckid</servlet-name>
+    <url-pattern>/addcheckid</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>10</session-timeout>
+  </session-config>
+  <filter>
+    <filter-name>right</filter-name>
+    <filter-class>controller.RightFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>right</filter-name>
+    <url-pattern>/main.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>right</filter-name>
+    <url-pattern>/addcheckid.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>right</filter-name>
+    <url-pattern>/infomodify.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>right</filter-name>
+    <url-pattern>/infomodify1.jsp</url-pattern>
+  </filter-mapping>
+  <listener>
+    <listener-class>controller.SessionListener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>DeviceServer</display-name>
+    <servlet-name>DeviceServer</servlet-name>
+    <servlet-class>Server.DeviceServer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeviceServer</servlet-name>
+    <url-pattern>/DeviceServer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeviceLogin</display-name>
+    <servlet-name>DeviceLogin</servlet-name>
+    <servlet-class>Server.DeviceLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeviceLogin</servlet-name>
+    <url-pattern>/DeviceLogin</url-pattern>
+  </servlet-mapping>
+</web-app>
