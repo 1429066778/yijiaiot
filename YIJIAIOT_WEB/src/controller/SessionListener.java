@@ -6,7 +6,8 @@ import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
 /**
- * Application Lifecycle Listener implementation class SessionListener
+ * @author ÃÔ≈‡œÕ
+ * ≈–∂œsesson «∑Ò ß–ß
  *
  */
 public class SessionListener implements  HttpSessionListener {

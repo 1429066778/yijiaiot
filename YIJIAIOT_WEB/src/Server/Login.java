@@ -5,18 +5,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import tcp.Client;
 import utils.CatchIP;
 import Bean.Bean;
 import Bean.USE;
 import Connection.GetConnection;
+import TCPCLIENT.Client;
 
 public class Login extends HttpServlet {
 	/**
@@ -24,9 +22,10 @@ public class Login extends HttpServlet {
 	 */
 	private static final long serialVersionUID = 1L;
 	public static Bean user = new Bean();
+	public static Client client=new Client();
 	public static GetConnection con = null;
 	public static int flag=0;
-	public static Client cli = new Client();
+	public static boolean istcplogin= true;
 	public static String wendu="0";
 	public static String shidu="0";
 	public static String guangqiang="0";
@@ -52,6 +51,7 @@ public class Login extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		request.setCharacterEncoding("UTF-8");
 		String psw="";
+		System.out.println("yes"+Login.istcplogin);
 		user.Set_username(request.getParameter("username"));
 		psw=request.getParameter("password");		
 		CatchIP ip = new CatchIP();

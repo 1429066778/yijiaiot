@@ -21,7 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 	<script > window.onload= buttonOnclick();</script>
-</head>
+ </head>
  <body style="background-image:url(images/4.jpg);background-size:cover;margin:0">
   <style type="text/css">
   form{
@@ -104,8 +104,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		<td width="10%" border="0"></td>
 		<td width="10%" border="0"><center><a href="youjian.jsp" target="_blank" title="点击联系我">联系我</a></center></td>
 		<td width="10%" border="0"><a href="zuce.jsp" target="_blank" title="点击注册">注册</a></td>
-		<td id="name" width="10%" border="0"><a href="login.jsp" target="_blank" title="点击重新登录">重新登录</a></td>
-
+		<td id="name" width="10%" border="0"><a href="http://47.95.114.213/live.html" target="_blank" title="实时视频监控">视频监控</a></td>
 		<td  width="10%" border="0"><a id="username" href="infomodify" title="点击查看修改您的信息"></a></td>
 	</tbody>
 	</table>
@@ -138,7 +137,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    	<td width="33%"><button  onclick="buttonOnclick(1)">开灯</button></th>
    	<td width="33%"><button type="submit" onclick="buttonOnclick(2)">关灯</button></th>
    	<td width="33%"><button type="submit" onclick="buttonOnclick(3)">开风扇</button></th>
-   
    <tr>
    	<td width="25%"><button type="submit" onclick="buttonOnclick(4)">关风扇</button></th>
   	<td width="25%"><button type="submit" onclick="buttonOnclick(5)">开电视</button></th>

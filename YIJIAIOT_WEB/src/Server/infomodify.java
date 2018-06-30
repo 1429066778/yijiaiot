@@ -1,7 +1,6 @@
 package Server;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -16,6 +15,10 @@ import Bean.Bean;
 import Connection.GetConnection;
 
 public class infomodify extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	int count=0;
 	 List<Bean> userlist= new ArrayList<Bean>();
 	public void doGet(HttpServletRequest request, HttpServletResponse response)

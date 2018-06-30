@@ -21,17 +21,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <%
-	String u="";
-    if(request.getParameter("use")!=null)
-     u=new String(request.getParameter("use")); 
-     if(u.equals("0")){
-     	u="注册成功，请登录！";
-     }
+  	<%
+		String u="";
+  		if(request.getParameter("use")!=null)
+    	u=new String(request.getParameter("use")); 
+     	if(u.equals("0")){
+     		u="注册成功，请登录！";
+     	}
    %> 
-<div class="login-container">
+	<div class="login-container">
 	<h1>欢迎登录YIJIAIOT</h1><br>
- <h2 id="xinxi"><%=u %><font color="white">  </font></h2>
+ 	<h2 id="xinxi"><%=u %><font color="white">  </font></h2>
 	<div class="connect">
 		<p></p>
 	</div>	
@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<a href="zuce.jsp">
 		<button type="button" class="register-tis">还没有账号？</button>
 	</a>
-</div>
+	</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <!--背景图片自动更换-->
@@ -56,7 +56,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script src="js/supersized-init.js"></script>
 <!--表单验证-->
 <script src="js/jquery.validate.min.js?var1.14.0"></script>
-
 <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
 <p></p>
 <p>Copyright &copy; 2018<a target="_blank" href="http://w-23028-28897-93380.47906461.sites.hk40.qifeiye.com/">田培贤</a></p>

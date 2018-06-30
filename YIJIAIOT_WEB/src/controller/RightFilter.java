@@ -17,7 +17,10 @@ public class RightFilter implements Filter {
 	public void init(FilterConfig filterConfig)throws ServletException{
 		
 	}
-
+/**
+ * @author 田培贤
+ * 过滤器，防止用户不登录直接操作
+ */
 	public void doFilter(ServletRequest request, ServletResponse response,
 			   FilterChain chain) throws IOException, ServletException {
 		       //获得session对象

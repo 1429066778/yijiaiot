@@ -18,14 +18,8 @@ public class addcheckid extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * The doPost method of the servlet. <br>
-	 *
-	 * This method is called when a form has its tag value method equals to post.
-	 * 
-	 * @param request the request send by the client to the server
-	 * @param response the response send by the server to the client
-	 * @throws ServletException if an error occurred
-	 * @throws IOException if an error occurred
+	 * @author 田培贤
+	 * 添加设备
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -51,5 +45,4 @@ public class addcheckid extends HttpServlet {
 		}
 		
 	}
-
 }

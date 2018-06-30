@@ -1,4 +1,9 @@
 package TCPCLIENT;
+/**
+ * 
+ * @author 田培贤
+ *此类定义协议字符串
+ */
 public interface CrazyitProtocol {
 	int PROTOCOL_LEN=2;
 	String MES_ROUND="**";

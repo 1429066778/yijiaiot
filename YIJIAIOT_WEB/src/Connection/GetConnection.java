@@ -1,5 +1,9 @@
  package Connection;
 import java.sql.Connection;
+/**
+ * @author 田培贤
+ * 数据库连接类
+ */
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -57,10 +61,7 @@ public class GetConnection {
 		} 
 		return n;
 	}
-	public ResultSet devicelogin(String id){
-		String sql = "select * from device where id='"+id+"'";
-		return rs;
-	}
+	
 	public int addcheckid(String username, String checkid){
 		int n=0;
 		String sql1="update users set check_id = '"+checkid+"' where username='"+username+"'";
@@ -82,7 +83,7 @@ public class GetConnection {
 			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			System.out.println("鏁版嵁搴撳叧闂敊璇紒");
+			System.out.println("数据库连接关闭错误");
 		}
 		
 	}
